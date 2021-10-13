@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <button type="button" id="new-game">🔁 New Game</button>
+        <div class="cards player000 active">
+            <div class="final-score">
+                <p class="p-name">Player 1</p>
+                <p id="f-score000">0</p>
+            </div>
+            <div class="current-score">
+                <p>Score</p>
+                <p id="c-score000">0</p>
+            </div>
+        </div>
+        <img class="dice hidden" src="./images/dice3.png" alt="" srcset="">
+        <div class="cards player001">
+            <div class="final-score">
+                <p class="p-name">Player 2</p>
+                <p id="f-score001">0</p>
+            </div>
+            <div class="current-score">
+                <p>Score</p>
+                <p id="c-score001">0</p>
+            </div>
+        </div>
+        </div>
+        <button type="button" id="roll">🎲 Roll Dice</button>
+        <button type="button" id="hold">Hold</button>
+    </main>
+    <div class="author">
+        Inspired from <a href="https://www.udemy.com/user/jonasschmedtmann">Jonas Schmedtmann</a> | developed by <a
+            href="https://www.linkedin.com/in/junihbhatt/"> Junaid Amin Bhat</a>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

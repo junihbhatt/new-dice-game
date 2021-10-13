@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(228, 21, 55);
+    background: linear-gradient(to right bottom, rgb(228, 21, 55) , rgb(128, 21, 228));
+}
+main.main{
+    font-family: 'Courier New', Courier, monospace;
+    width: 800px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.24);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    position: absolute;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+button:active{
+    transform: translate(-50%, 3px) scale(0.95);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+#new-game{
+    color: #0078d7;
+    top: 25px;
+}
+#roll{
+    bottom: 100px;
+}
+#hold{
+    bottom: 45px;
+}
+.cards{
+    width: 50%;
+    height: 100%;
+    transition: all 0.5;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+.cards.active{
+    background: rgba(255, 255, 255, 0.3);
+}
+.final-score{
+    text-align: center;
+    color: #fff;
+    font-size: 2.8rem;
+    color: crimson;
+    font-weight: 900;
+}
+
+.p-name{
+    margin-bottom: 20px;
+    font-size : 1.8rem;
+    color: #333;
+}
+.current-score{
+    background: crimson;
+    padding: 20px 60px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+.dice{
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.527);
+}
+.winner{
+    background: rgb(96, 210, 245);
+}
+.winner .p-name{
+    font-size: 2.5rem;
+    color: crimson;
+}
+
+.hidden{
+    display: none;
+}
+.author{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    color: #aaa;
+}
+.author a{
+color: #ddd;
+text-decoration: none;
+}
+.author a:hover{
+    color: #eee;
+}
